@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educación Financiera | Programas del Bienestar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand-group">
+        <div class="brand-mark">BIENESTAR</div>
+        <div>
+          <p class="brand-name">Educación Financiera</p>
+          <p class="brand-subtitle">Herramienta de orientación para beneficiarios</p>
+        </div>
+      </div>
+      <nav class="topnav" aria-label="Menú principal">
+        <a href="#evaluation-section">Evaluación</a>
+        <a href="#programs">Programas</a>
+        <a href="#tips">Consejos</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Tu bienestar financiero</span>
+        <h1>Mejora tu Educación Financiera</h1>
+        <p class="hero-text">Un espacio seguro para entender tus apoyos sociales, tu ahorro y obtener recomendaciones fáciles.</p>
+        <div class="hero-actions">
+          <button id="start-button" class="primary-button" type="button">Comienza tu evaluación</button>
+          <a class="ghost-button" href="#programs">Conoce los programas</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="images/bienestar-hero.svg" alt="Personas revisando información de programas sociales" />
+        <div class="hero-card">
+          <span> Programa Bienestar </span>
+          <h2>Apoyos directos para tu familia</h2>
+          <p>Descubre cómo los programas sociales pueden ayudarte a mejorar tu ahorro y tu seguridad financiera.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Metas con tu tarjeta Bienestar</p>
+          <h2>El asesor te ayuda a crear un plan con tu dinero</h2>
+        </div>
+      </div>
+      <div class="program-grid">
+        <article class="program-card">
+          <img src="images/pension.svg" alt="Plan de ahorro para metas personales" />
+          <h3>Ahorra para tus metas</h3>
+          <p>Define un objetivo real: comprar un iPhone, hacer una reserva mensual o alcanzar un ahorro para emergencias.</p>
+        </article>
+        <article class="program-card">
+          <img src="images/becas.svg" alt="Plan para reducir deudas" />
+          <h3>Regresa tus deudas</h3>
+          <p>Organiza pagos y libera tu presupuesto para que tu tarjeta Bienestar se use en lo que de verdad importa.</p>
+        </article>
+        <article class="program-card">
+          <img src="images/mujeres.svg" alt="Plan para invertir o comprar vivienda" />
+          <h3>Construye un futuro mejor</h3>
+          <p>Planea pasos sencillos para invertir, ahorrar cada mes o avanzar hacia una vivienda con apoyo del Bienestar.</p>
+        </article>
+      </div>
+    </section>
+
+    <main class="content">
+      <section class="form-card" id="evaluation-section">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Evaluación rápida</p>
+            <h2>Completa tu información</h2>
+          </div>
+          <p class="section-note">El asesor Bienestar te ayuda a crear un plan para ahorrar, pagar deudas o alcanzar otra meta con tu tarjeta.</p>
+        </div>
+        <form id="profile-form">
+          <div class="field-group">
+            <label for="age">Edad</label>
+            <select id="age" name="age" required>
+              <option value="">Selecciona</option>
+              <option value="18-30">18 - 30</option>
+              <option value="31-45">31 - 45</option>
+              <option value="46-60">46 - 60</option>
+              <option value="60+">60 o más</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="support">¿Qué cobras con tu tarjeta Bienestar?</label>
+            <select id="support" name="support" required>
+              <option value="">Elige una opción</option>
+              <option value="beca">Beca</option>
+              <option value="pension">Pensión</option>
+              <option value="ingreso">Ingreso básico</option>
+              <option value="mujeres">Otro apoyo</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="amount">Monto que recibes</label>
+            <div class="input-group">
+              <span class="input-prefix">$</span>
+              <input id="amount" name="amount" type="number" min="0" placeholder="Ingresar monto" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group half">
+              <label for="savings">Ahorro mensual</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input id="savings" name="savings" type="number" min="0" placeholder="Ingresar ahorro" />
+              </div>
+            </div>
+            <div class="field-group half">
+              <label for="debt">Deudas</label>
+              <div class="input-group">
+                <span class="input-prefix">$</span>
+                <input id="debt" name="debt" type="number" min="0" placeholder="Ingresar deudas" />
+              </div>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="apps">¿Usas apps financieras?</label>
+            <select id="apps" name="apps" required>
+              <option value="">Selecciona</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <button class="primary-button" type="submit">Ver mi perfil</button>
+        </form>
+      </section>
+
+      <aside class="result-card" id="result-card">
+        <div class="result-top">
+          <span class="eyebrow">Tu resultado</span>
+          <div class="result-icon" aria-hidden="true">🌱</div>
+        </div>
+        <h2 class="result-status" id="result-title">Crecimiento</h2>
+        <p class="result-description" id="result-description">¡Vas por buen camino! Tienes un manejo saludable de tus finanzas.</p>
+        <div class="result-advice">
+          <span class="advice-label">Consejo práctico</span>
+          <p id="result-advice">Sigue ahorrando y planea tus metas.</p>
+        </div>
+        <div class="result-summary">
+          <div>
+            <strong>Programa:</strong>
+            <span id="result-program">Beca Benito Juárez</span>
+          </div>
+          <div>
+            <strong>Foco:</strong>
+            <span id="result-focus">Ahorro y seguridad</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="tips" id="tips">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Consejos útiles</p>
+          <h2>Pequeñas acciones para mejorar tu presupuesto</h2>
+        </div>
+      </div>
+      <div class="tip-grid">
+        <article class="tip-card">
+          <h3>Revisa tu apoyo mensual</h3>
+          <p>Conoce cuánto recibes y anota cuánto puedes ahorrar cada semana para tener seguridad.</p>
+        </article>
+        <article class="tip-card">
+          <h3>Organiza tus gastos</h3>
+          <p>Separa lo indispensable de lo opcional para evitar sobrecargas cuando hay deudas.</p>
+        </article>
+        <article class="tip-card">
+          <h3>Usa herramientas sencillas</h3>
+          <p>Si no usas apps, apunta lo que gastas en un cuaderno y verifica tu progreso.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Este sitio es una simulación educativa. No reemplaza información oficial de los programas del Bienestar.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
