@@ -2,6 +2,9 @@
 
 🚀 Proyecto web tipo mockup enfocado en educación financiera para personas en México que reciben apoyos del Bienestar.
 
+## 🌐 Demo en vivo
+
+🔗 [Ver aplicación funcionando](https://leonel-aimx.github.io/tarea1-pagina-bienestar-finanzas/)
 ---
 
 ## 📌 Descripción
